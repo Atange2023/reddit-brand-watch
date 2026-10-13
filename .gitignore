@@ -1,0 +1,42 @@
+# No OS or editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# No secrets or credentials, ever
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+token.json
+secrets.json
+
+# No local config or logs
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+
+# No dependency or build output (this repo is docs-only; keep it that way)
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+
+# Local watchlist and report output of the skill stay out of the repo
+reddit-watch/
+
+# No media artifacts — renders live outside the repo
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wav
+*.flac
+*.psd

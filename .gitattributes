@@ -1,0 +1,14 @@
+# Normalize line endings so the repo is byte-identical no matter which machine pushes it.
+# Without this, Windows git (core.autocrlf=true) rewrites the working tree, so the
+# committed blobs - and therefore the tree hash - depend on who pushed.
+* text=auto eol=lf
+
+# Text sources stay LF everywhere
+*.md            text eol=lf
+*.sh            text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
+
+# Windows batch files must stay CRLF, or cmd.exe mis-parses them
+*.cmd           text eol=crlf
+*.bat           text eol=crlf
