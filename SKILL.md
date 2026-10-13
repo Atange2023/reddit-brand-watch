@@ -19,7 +19,7 @@ description: 监控 Reddit 上指定品牌、产品线、具体 SKU/型号(以�
 - **时间窗口**:默认 7 天;首次或样本太少时用 30 天。
 - **报告语言与读者**:例如中文、产品经理。
 
-示例(STANLEY 百得苏州学习项目的默认值,可改):自家 STANLEY、DEWALT、Craftsman、BLACK+DECKER;竞品 Milwaukee、Makita、Ryobi、Bosch;板块 Tools、HomeImprovement、DIY、woodworking、MilwaukeeTool、Dewalt、Craftsman、ToolBox;读者为产品创新团队,报告用中文。
+示例(五金工具行业,可改):自家 STANLEY、DEWALT、Craftsman、BLACK+DECKER;竞品 Milwaukee、Makita、Ryobi、Bosch;板块 Tools、HomeImprovement、DIY、woodworking、MilwaukeeTool、Dewalt、Craftsman、ToolBox;读者为产品创新团队,报告用中文。
 
 ## 1. 准备环境(每个新会话做一次)
 
@@ -95,7 +95,7 @@ python3 -I /tmp/rw/tools/verify_report.py /tmp/rw/<日期>/store.json /tmp/rw/<�
 ## 6. 交付
 
 - 报告、store.json、各 q*.md、queries.tsv 一并保存到用户文件夹 `reddit-watch/<日期>/`,在回复里只给报告的链接和一段简短结论。
-- 对照用户的验收标准(若有)汇报:覆盖板块数、主题数、证据数、噪声占比,以及 STANLEY 等自家品牌是否拿到了评论内容。诚实说明不达标之处。
+- 对照用户的验收标准(若有)汇报:覆盖板块数、主题数、证据数、噪声占比,以及自家品牌是否拿到了评论内容。诚实说明不达标之处。
 - 如果用户想定期运行,可用定时任务创建每周任务,提示词里写明"使用 reddit-brand-watch 技能,按 reddit-watch/watchlist.md 运行并把报告存入 reddit-watch/<日期>/"。告诉用户定时任务只在应用打开时运行。
 
 ## 已知局限(向用户如实说明)

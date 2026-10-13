@@ -12,7 +12,7 @@
 
 ## 安装
 
-克隆到本机技能目录即可(私有仓库需要你的 GitHub 凭据):
+克隆到本机技能目录即可:
 
 ```bash
 git clone https://github.com/Atange2023/reddit-brand-watch.git ~/.claude/skills/reddit-brand-watch
@@ -25,9 +25,14 @@ git clone https://github.com/Atange2023/reddit-brand-watch.git ~/.claude/skills/
 - 免 Key 路径下 Reddit 搜索页可能异常,召回偏低,部分板块可能零命中;品牌词过短或型号单独搜索时,整条查询可能被相关度门槛过滤为空。
 - 只有帖子标题、赞数、评论数和被截断的高赞评论片段(约 200 字符),没有帖子正文。
 - 沙箱里无法打开 reddit.com 页面,链接来自检索结果而非人工打开确认。
-- 学习练习级别:未做 Reddit 数据商用授权审查,也未对第三方开源工具做安全审查;转正式使用前需要补上。
+- 学习练习级别:未做 Reddit 数据商用授权审查,也未对第三方开源工具做安全审查;转正式使用前需要补上。使用前请自行确认符合 Reddit 的用户协议与数据 API 条款,商业用途通常需要 Reddit 官方授权。
 
 ## 目录
 
 - `SKILL.md` 技能正文(流程、查询设计要点、报告规则)
 - `tools/` 批量检索、入库、出报告、核验脚本和报告骨架
+- `LICENSE` MIT 许可证
+
+## 许可
+
+MIT,见 `LICENSE`。检索层 last30days-skill 是独立项目,有它自己的许可(MIT),本仓库不包含其代码。
